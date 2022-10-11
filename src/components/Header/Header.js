@@ -33,6 +33,20 @@ const Header = () => {
             </span>
           </Link>
           <ul className='flex items-center hidden space-x-8 lg:flex'>
+          <li>
+              <NavLink
+                to='/home'
+                aria-label='Home'
+                title='Home'
+                className={({ isActive }) =>
+                  isActive
+                    ? 'font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                    : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                }
+              >
+                Home
+              </NavLink>
+            </li>
             <li>
               <NavLink
                 to='/context'
