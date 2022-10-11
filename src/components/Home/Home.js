@@ -9,7 +9,7 @@ const Home = () => {
         <div className='mb-10 lg:max-w-lg  lg:pr-5 lg:mb-0'>
           <div className='max-w-xl mb-6 lg:mt-8'>
             <h2 className='max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none'>
-            A quiz is a form of game or mind <span className='inline-block text-blue-400 font-bold'>Sport</span>
+            A quiz is a form of game or mind <span className='inline-block text-orange-500 font-extrabold'>Sport</span>
             </h2>
             <p className='text-base text-gray-700 md:text-lg'>
             Quiz, a contest in which participants test what they know by answering questions on one or more topics.
