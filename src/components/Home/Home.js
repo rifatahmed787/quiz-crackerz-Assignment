@@ -1,10 +1,14 @@
 import React from 'react';
 import Lottie from "lottie-react";
 import quiz from '../assets/quiz.json'
+import { useLoaderData } from 'react-router-dom';
+import Topic from '../Topic/Topic';
 
 const Home = () => {
+    const topics=useLoaderData()
+    // console.log(topics.data)
     return (
-        <div className='px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-24'>
+    <div className='px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-24'>
       <div className='flex flex-col items-center justify-between lg:flex-row'>
         <div className='mb-10 lg:max-w-lg  lg:pr-5 lg:mb-0'>
           <div className='max-w-xl mb-6 lg:mt-8'>
@@ -31,7 +35,14 @@ const Home = () => {
             <Lottie animationData={quiz} loop={true} />
           </div>
         </div>
-      </div>
+       </div>
+       <div className='grid md:grid-cols-4 gap-5 mt-40'>
+        {
+            topics.data.map(topic=><Topic
+            topic={topic}
+            ></Topic>)
+        }
+       </div>
     </div>
     );
 };
