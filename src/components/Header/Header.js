@@ -8,7 +8,7 @@ const Header = () => {
       <div className='px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
         <div className='relative flex items-center justify-between'>
           <Link
-            to='/'
+            to='/home'
             aria-label='Quiz Time'
             title='Quiz Time'
             className='inline-flex items-center'
@@ -32,7 +32,7 @@ const Header = () => {
               Quiz Time
             </span>
           </Link>
-          <ul className='flex items-center hidden space-x-8 lg:flex'>
+         <ul className='items-center hidden space-x-8 lg:flex'>
           <li>
               <NavLink
                 to='/home'
@@ -47,20 +47,7 @@ const Header = () => {
                 Home
               </NavLink>
             </li>
-            <li>
-              <NavLink
-                to='/context'
-                aria-label='Context'
-                title='Context'
-                className={({ isActive }) =>
-                  isActive
-                    ? 'font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
-                    : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
-                }
-              >
-                Context
-              </NavLink>
-            </li>
+            
             <li>
               <NavLink
                 to='/statistics'

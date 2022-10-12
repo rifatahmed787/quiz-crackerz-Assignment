@@ -39,6 +39,7 @@ const Home = () => {
        <div className='grid md:grid-cols-4 gap-5 mt-40'>
         {
             topics.data.map(topic=><Topic
+            key={topic.id}
             topic={topic}
             ></Topic>)
         }
